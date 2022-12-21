@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<TextView
+    android:id="@+id/signin"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="SignIn"
+    android:textColor="@color/black"
+    android:textSize="30dp"
+    android:layout_margin="30dp"
+    android:gravity="center"
+    android:textStyle="bold"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signin"
+        android:id="@+id/user"
+        android:text="USERNAME"
+        android:textSize="20dp"
+        android:textColor="#A51235"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:drawablePadding="5dp"
+        />
+
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/username"
+    android:layout_below="@+id/user"
+    android:hint="USERNAME,MOBILE NUMBER,MAIL"
+    android:textColorHint="@color/black"
+    android:padding="10dp"
+    android:layout_margin="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PASSWORD"
+        android:id="@+id/pass"
+        android:textSize="20dp"
+        android:layout_below="@+id/username"
+        android:textColor="#A51235"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:drawableLeft="@drawable/ic_baseline_key_24"
+        android:drawablePadding="5dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password"
+        android:layout_below="@+id/pass"
+        android:hint="PASSWORD"
+        android:textColorHint="@color/black"
+        android:padding="10dp"
+        android:layout_margin="10dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/login"
+        android:layout_below="@+id/password"
+        android:text="LOGIN"
+        android:textColor="@color/black"
+        android:padding="20dp"
+        android:backgroundTint="#D63333"/>
+
+
+</RelativeLayout>
